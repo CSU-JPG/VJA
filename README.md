@@ -1,11 +1,10 @@
-# IESBench
+##  When the Prompt Becomes Visual: Vision-Centric Jailbreak Attacks for Large Image Editing Models
+[**🌐 GitHub**]() | [**🛎 Project Page**]() ｜ [**👉 Download full datasets**]()
 
 <p align="center">
   <img src="assets/logo.png" alt="logo" width="200"/>
 </p>
 
-##  When the Prompt Becomes Visual: Vision-Centric Jailbreak Attacks for Large Image Editing Models
-[**🌐 GitHub**]() | [**🛎 Project Page**]() ｜ [**👉 Download full datasets**]()
 
 ---
 
