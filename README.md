@@ -7,13 +7,14 @@
 
 <h2 align="center">When the Prompt Becomes Visual: Vision-Centric Jailbreak Attacks for Large Image Editing Models</h2>
 <h5 align="center"> 
-Welcome to Chart2Code! If you find this repo useful, please give a star ⭐ for encouragement.
+Welcome ! we aim to examine the safety of large image editing models in a vision-centric perspective.
 </h5>
 
+<div align="center">
 
-<p align="center">
-[**🌐 GitHub**]() | [**🛎 Project Page**]() ｜ [**👉 Datasets**]() ｜ [**📃 Paper**]()
-</p>
+🌐 [Homepage](https://github.com/JayceonHo/VJA/) | 🏆 [Leaderboard](https://github.com/JayceonHo/VJA) | 👉 [Dataset](https://github.com/JayceonHo/VJA) |  📄 [Paper](https://github.com/JayceonHo/VJA)
+
+</div>
 
 ## 📢 Updates
 
