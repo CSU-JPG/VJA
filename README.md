@@ -1,40 +1,51 @@
-##  When the Prompt Becomes Visual: Vision-Centric Jailbreak Attacks for Large Image Editing Models
-[**🌐 GitHub**]() | [**🛎 Project Page**]() ｜ [**👉 Download full datasets**]()
+
 
 <p align="center">
-  <img src="assets/logo.png" alt="logo" width="200"/>
+  <img src="assets/logo.png" alt="logo" width="120"/>
 </p>
 
 
----
+<h2 align="center">When the Prompt Becomes Visual: Vision-Centric Jailbreak Attacks for Large Image Editing Models</h2>
+<h5 align="center"> 
+Welcome to Chart2Code! If you find this repo useful, please give a star ⭐ for encouragement.
+</h5>
+
+
+<p align="center">
+[**🌐 GitHub**]() | [**🛎 Project Page**]() ｜ [**👉 Datasets**]() ｜ [**📃 Paper**]()
+</p>
 
 ## 📢 Updates
 
-- **[2026-1-1]**: Released IESBench version 1.0 🔥
-
-
-## 🌟 About IESBench
-IESBench, the first standardized benchmark for evaluating image editing safety, enabling principled analysis of vision-centric jailbreak attacks.
-
-<img src="assets/overview.png" alt="logo" style="zoom:70%;" />
-
-<p align="center"><b>Overview of IESBench.</b></p>
-
-IESBench contains 1054 attack images, across 15 safety policies, 116 attributes and 9 actions. 
-
----
+- **[2026-2-5]**: Our project is online 🔥
 
 ## 📑 Table of Contents
-- [Setup](#️-setup)
-- [Accessing Datasets](#-accessing-datasets)
-- [Data Format](#-data-format)
-- [Evaluation](#-evaluation)
-- [Update](#-update)
-- [Citation](#-citation)
-- [Disclaimers](#-disclaimers)
-- [Contact](#-contact)
+- [📢 Updates](#-updates)
+- [📑 Table of Contents](#-table-of-contents)
+- [🌟 Project Overview](#-project-overview)
+  - [Vision-centric Jailbreak Attack](#vision-centric-jailbreak-attack)
+  - [IESBench: Benchmarking Image Editing Safety](#iesbench-benchmarking-image-editing-safety)
+  - [Introspective Defense](#introspective-defense)
+- [🚀 Setup](#-setup)
+- [🗂 Dataset Format](#-dataset-format)
+- [⚖️ LeaderBoard](#️-leaderboard)
+- [📄 Citation](#-citation)
+- [❌ Disclaimers](#-disclaimers)
 
----
+
+
+## 🌟 Project Overview
+
+### Vision-centric Jailbreak Attack
+
+### IESBench: Benchmarking Image Editing Safety
+<img src="assets/overview.png" alt="logo" style="zoom:70%;" />
+
+<p align="center"><b>Fig 1. Overview of IESBench.</b></p>
+
+IESBench, a *vision-centric benchmark* for evaluating the safety of large image editing models, which contains 1054 *visually-prompted images*, spanning across 15 safety policies, 116 attributes and 9 actions. 
+
+### Introspective Defense 
 
 ## 🚀 Setup
 
@@ -46,20 +57,19 @@ conda activate IESBenchEval
 pip install -r requirements.txt
 ```
 
----
 
-## 📂 Accessing Datasets
+
+
+
+
+## 🗂 Dataset Format
 
 IESBench was meticulously designed to challenge and evaluate image editing safety.
 For more detailed information and accessing our dataset, please refer to our Huggingface page:
 
-- 🧑‍🔬 [IESBench](https://huggingface.co/datasets)
-- 
----
+- The benchmark is available [here](https://huggingface.co/datasets)
 
-## 🗂 Dataset Format
-
-- The dataset is provided in jsonl format and contains the following attributes:
+- Every data is organized in json format as follows:
 
 ```
 [
@@ -82,37 +92,32 @@ For more detailed information and accessing our dataset, please refer to our Hug
     "image_id": [string] Unique identifier for all images,
   },
 ```
+## ⚖️ LeaderBoard
 
----
 
 
-## ⚖️ Evaluation
-
-Please refer to our evaluation folders for detailed information on evaluating with the ISEBench:
-
-- 🔍 [IESBench Evaluation](https://github.com)
-
----
 
 ## 📄 Citation
 
-If you find our work useful, please cite us:
+If you find our work can be helpful, we would appreciate your citation and star:
 
 ```bibtex
-@misc{ 
+@misc{hou2026vja,
+      title={When the Prompt Becomes Visual: Vision-Centric Jailbreak Attacks for Large Image Editing Models}, 
+      author={Jiacheng Hou and Yining Sun and Ruochong Jin and Haochen Han and Fangming Liu and Wai Kin Victor Chan and Alex Jinpeng Wang},
+      year={2026},
+      eprint={xxx},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/xxx}, 
 }
 ```
 
----
 
 ## ❌ Disclaimers
+
 This dataset contains sensitive or harmful content that may be disturbing, This benchmark is provided for educational and research purposes only.
 
----
 
 
-## ☎️ Contact
 
-For questions, suggestions or issues, feel free to open an [issue](https://github.com) on GitHub.
-
----
