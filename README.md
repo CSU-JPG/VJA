@@ -41,8 +41,8 @@ Recent advances in large image editing models have shifted the paradigm from tex
 
 ### Contribution 1 - Vision-centric Jailbreak Attack
 <p align="center">
-  <img src="assets/teaser_up.png" width="44%" alt="效果图1" />
-  <img src="assets/teaser_down.png" width="53%" alt="效果图2" />
+  <img src="assets/teaser_up.png" width="44%" alt="teaser1" />
+  <img src="assets/teaser_down.png" width="53%" alt="teaser2" />
 </p>
 <p align="center"><b>Fig 1. Comparison of our attack method with the text-centric method.</b></p>
 
@@ -62,7 +62,7 @@ Meanwhile, to facilitate standardized evaluation, we also construct the IESBench
 
 ### Contribution 3 - Introspective Defense 
 <p align="center">
-<img src="assets/defense_method.png" alt="defense" style="zoom:30%;" />
+<img src="assets/defense_method.png" alt="defense" width="60%" />
 </p>
 
 Lastly, we propose a simple yet effective training-free defense through *multimodal instrosptive reasoning*, which improves safety of models against malicious visual editing with minimal overhead,
