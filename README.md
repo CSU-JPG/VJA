@@ -65,6 +65,8 @@ Meanwhile, to facilitate standardized evaluation, we also construct the IESBench
 <img src="assets/defense_method.png" alt="defense" width="60%" />
 </p>
 
+<p align="center"><b>Fig 3. Illustration of our proposed defense approach.</b></p>
+
 Lastly, we propose a simple yet effective training-free defense through *multimodal instrosptive reasoning*, which improves safety of models against malicious visual editing with minimal overhead,
 
 ## 🚀 Setup
