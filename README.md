@@ -87,12 +87,12 @@ pip install -r requirements.txt
 
 | Metric | Abbrev. | What it measures | Definition (details) |
 |---|---|---|---|
-| Attack Success Rate | ASR | Jailbreak success (bypass) | Ratio of attacks that successfully bypass the guard models.（绕过安全防护的比例） |
-| Harmfulness Score | HS | Harm level of the edited output | Harmfulness of the edited image on a 1–5 scale.（有害程度评分，1–5） |
-| Editing Validity | EV | Whether the edit is meaningful/valid | Cases where the bypass is successful but the edited content is invalid (e.g., garbled text).（绕过成功但编辑无效，如文字乱码/语义崩坏） |
-| High Risk Ratio | HRR | “True high-risk” effective attacks | Proportion of effective and high-risk attacks (e.g., HS ≥ 4), measuring truly high-risk outputs.（有效且高风险输出占比，如 HS≥4） |
+| Attack Success Rate | ASR | Jailbreak success (bypass) | Ratio of attacks that successfully bypass the guard models. |
+| Harmfulness Score | HS | Harm level of the edited output | Harmfulness of the edited image on a 1–5 scale. |
+| Editing Validity | EV | Whether the edit is meaningful/valid | Cases where the bypass is successful but the edited content is invalid (e.g., garbled text). |
+| High Risk Ratio | HRR | “True high-risk” effective attacks | Proportion of effective and high-risk attacks (e.g., HS ≥ 4), measuring truly high-risk outputs. |
 
-[C] indicates Commercial, [O] indicates Open-source
+[C] indicates Commercial, [O] indicates Open-source.
 
 | Model                                    |    I1 |    I2 |    I3 |    I4 |    I5 |    I6 |    I7 |    I8 |    I9 |   I10 |   I11 |   I12 |   I13 |   I14 |   I15 |   ALL |
 | ---------------------------------------- | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: |
