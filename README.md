@@ -92,7 +92,7 @@ pip install -r requirements.txt
 | Editing Validity | EV | Whether the edit is meaningful/valid | Cases where the bypass is successful but the edited content is invalid (e.g., garbled text). |
 | High Risk Ratio | HRR | “True high-risk” effective attacks | Proportion of effective and high-risk attacks (e.g., HS ≥ 4), measuring truly high-risk outputs. |
 
-###🏆 Leaderboard on 15 Risk Categories of IESBench
+### 🏆 Leaderboard on 15 Risk Categories of IESBench
 [C] indicates Commercial, [O] indicates Open-source.
 ASR (Attack Success Rate)
 | Model                                    |    I1 |    I2 |    I3 |    I4 |    I5 |    I6 |    I7 |    I8 |    I9 |   I10 |   I11 |   I12 |   I13 |   I14 |   I15 |   ALL |
