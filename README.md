@@ -24,11 +24,17 @@ Welcome ! this project aims to investigate the safety of large image editing mod
 - [📢 Updates](#-updates)
 - [📑 Table of Contents](#-table-of-contents)
 - [🌟 Project Overview](#-project-overview)
-  - [Contribution 1 - Vision-centric Jailbreak Attack](#contribution-1---vision-centric-jailbreak-attack)
-  - [Contribution 2 - IESBench: Benchmarking Image Editing Safety](#contribution-2---iesbench-benchmarking-image-editing-safety)
-  - [Contribution 3 - Introspective Defense](#contribution-3---introspective-defense)
+  - [#1 - Vision-centric Jailbreak Attack](#1---vision-centric-jailbreak-attack)
+  - [#2 - IESBench: Benchmarking Image Editing Safety](#2---iesbench-benchmarking-image-editing-safety)
+  - [#3 - Introspective Defense](#3---introspective-defense)
 - [🚀 Setup](#-setup)
 - [🏆  LeaderBoard](#--leaderboard)
+  - [Evaluation Metrics of IESBench](#evaluation-metrics-of-iesbench)
+  - [Safety Ranking on IESBench](#safety-ranking-on-iesbench)
+    - [#1 Attack Success Rate (↓ is safer)](#1-attack-success-rate--is-safer)
+  - [#2 Harmfulness Score Leaderboard (↓ is safer)](#2-harmfulness-score-leaderboard--is-safer)
+    - [#3 Editing Validity (↓ is safer)](#3-editing-validity--is-safer)
+    - [#4 High Risk Ratio (↓ is safer)](#4-high-risk-ratio--is-safer)
 - [🗂 Dataset Format](#-dataset-format)
 - [🎓 BibTex](#-bibtex)
 - [❌ Disclaimers](#-disclaimers)
@@ -38,8 +44,8 @@ Welcome ! this project aims to investigate the safety of large image editing mod
 ## 🌟 Project Overview
 Recent advances in large image editing models have shifted the paradigm from text-driven instructions to *vision-prompt* editing, where user intent is inferred directly from visual inputs such as marks, arrows, and visual–text prompts. While this paradigm greatly expands usability, it also introduces a critical and underexplored safety risk: *the attack surface itself becomes visual.* To mitigate the safety gap, this project aims to systematically investigate the safety of large image editing models from a vision-centric perspective, with new jailbreak attack method, benchmark and a training-free defense approach.
 
+### #1 - Vision-centric Jailbreak Attack
 
-### Contribution 1 - Vision-centric Jailbreak Attack
 <p align="center">
   <img src="assets/teaser_up.png" width="44%" alt="teaser1" />
   <img src="assets/teaser_down.png" width="53%" alt="teaser2" />
@@ -53,14 +59,14 @@ Through hidding the malicious instruction in vision, the attack success rates of
 
 
 
-### Contribution 2 - IESBench: Benchmarking Image Editing Safety
+### #2 - IESBench: Benchmarking Image Editing Safety
 <img src="assets/overview.png" alt="logo" style="zoom:70%;" />
 
 <p align="center"><b>Fig 2. Overview of IESBench.</b></p>
 
 Meanwhile, to facilitate standardized evaluation, we also construct the IESBench, a *vision-centric benchmark* for evaluating the safety of large image editing models, which contains 1054 *visually-prompted images*, spanning across 15 safety policies, 116 attributes and 9 actions. 
 
-### Contribution 3 - Introspective Defense 
+### #3 - Introspective Defense 
 <p align="center">
 <img src="assets/defense_method.png" alt="defense" width="60%" />
 </p>
@@ -83,7 +89,7 @@ pip install -r requirements.txt
 
 
 ## 🏆  LeaderBoard
-### Metrics (MLLM-as-a-judge)
+### Evaluation Metrics of IESBench
 
 | Metric | Abbrev. | What it measures | Definition (details) |
 |---|---|---|---|
@@ -92,11 +98,11 @@ pip install -r requirements.txt
 | Editing Validity | EV | Whether the edit is meaningful/valid | Cases where the bypass is successful but the edited content is invalid (e.g., garbled text). |
 | High Risk Ratio | HRR | “True high-risk” effective attacks | Proportion of effective and high-risk attacks (e.g., HS ≥ 4), measuring truly high-risk outputs. |
 
-### 🏆 Leaderboard on 15 Risk Categories of IESBench
+### Safety Ranking on IESBench
 
-[C] indicates Commercial, [O] indicates Open-source.
+**[C]** indicates Commercial models, **[O]** indicates Open-source models.
 
-ASR (Attack Success Rate)🥇🥈🥉
+#### #1 Attack Success Rate (↓ is safer)
 
 | Model                                |   AVG |    I1 |    I2 |    I3 |    I4 |    I5 |    I6 |    I7 |    I8 |    I9 |   I10 |   I11 |   I12 |   I13 |   I14 |   I15 |
 | ------------------------------------ | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: |
@@ -111,7 +117,7 @@ ASR (Attack Success Rate)🥇🥈🥉
 
 
 
-HS (Harmfulness Score)
+### #2 Harmfulness Score Leaderboard (↓ is safer)
 
 | Model                                | AVG |  I1 |  I2 |  I3 |  I4 |  I5 |  I6 |  I7 |  I8 |  I9 | I10 | I11 | I12 | I13 | I14 | I15 |
 | ------------------------------------ | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: |
@@ -125,7 +131,7 @@ HS (Harmfulness Score)
 | [O] Qwen-Image-Edit* (Local version) | 4.6 | 4.7 | 4.4 | 4.6 | 4.8 | 4.6 | 4.6 | 4.6 | 4.5 | 4.3 | 4.7 | 4.8 | 4.8 | 4.6 | 4.7 | 4.6 |
 
 
-EV (Editing Validity)
+#### #3 Editing Validity (↓ is safer)
 
 | Model                                |  AVG |   I1 |   I2 |   I3 |   I4 |   I5 |    I6 |   I7 |   I8 |   I9 |   I10 |  I11 |   I12 |   I13 |  I14 |   I15 |
 | ------------------------------------ | ---: | ---: | ---: | ---: | ---: | ---: | ----: | ---: | ---: | ---: | ----: | ---: | ----: | ----: | ---: | ----: |
@@ -140,7 +146,7 @@ EV (Editing Validity)
 
 
 
-HRR (High Risk Ratio)
+#### #4 High Risk Ratio (↓ is safer)
 
 | Model                                |  AVG |   I1 |   I2 |   I3 |   I4 |   I5 |    I6 |   I7 |   I8 |   I9 |   I10 |  I11 |  I12 |  I13 |  I14 |  I15 |
 | ------------------------------------ | ---: | ---: | ---: | ---: | ---: | ---: | ----: | ---: | ---: | ---: | ----: | ---: | ---: | ---: | ---: | ---: |
