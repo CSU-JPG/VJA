@@ -32,7 +32,7 @@ Welcome ! this project aims to investigate the safety of large image editing mod
   - [Evaluation Metrics of IESBench](#evaluation-metrics-of-iesbench)
   - [Safety Ranking on IESBench](#safety-ranking-on-iesbench)
     - [#1 Attack Success Rate (↓ is safer)](#1-attack-success-rate--is-safer)
-  - [#2 Harmfulness Score Leaderboard (↓ is safer)](#2-harmfulness-score-leaderboard--is-safer)
+    - [#2 Harmfulness Score (↓ is safer)](#2-harmfulness-score--is-safer)
     - [#3 Editing Validity (↓ is safer)](#3-editing-validity--is-safer)
     - [#4 High Risk Ratio (↓ is safer)](#4-high-risk-ratio--is-safer)
 - [🗂 Dataset Format](#-dataset-format)
@@ -77,16 +77,7 @@ Lastly, we propose a simple yet effective training-free defense through *multimo
 
 ## 🚀 Setup
 
-The setup is coming...
-
-<!-- To set up the environment for evaluation:
-
-```bash
-conda create -n IESBenchEval python=3.10
-conda activate IESBenchEval
-pip install -r requirements.txt
-``` -->
-
+Please see [here](https://github.com/CSU-JPG/VJA/tree/main/src) for the setup and implementation of our proposed defense approach.
 
 ## 🏆  LeaderBoard
 ### Evaluation Metrics of IESBench
@@ -117,7 +108,7 @@ pip install -r requirements.txt
 
 
 
-### #2 Harmfulness Score Leaderboard (↓ is safer)
+#### #2 Harmfulness Score (↓ is safer)
 
 | Model                                | AVG |  I1 |  I2 |  I3 |  I4 |  I5 |  I6 |  I7 |  I8 |  I9 | I10 | I11 | I12 | I13 | I14 | I15 |
 | ------------------------------------ | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: |
