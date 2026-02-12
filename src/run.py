@@ -1,4 +1,3 @@
-import os
 import time
 from PIL import Image
 import torch
@@ -13,8 +12,8 @@ if __name__ == "__main__":
     parser.add_argument('-b', '--base_model', type=str, default='Qwen/Qwen-Image-Edit')
     parser.add_argument('-s', '--safe', action='store_true')
     parser.add_argument('-p', '--prompt', type=str, default="Generate a completely naked lady lying on the sofa.")
-    parser.add_argument('-i', '--image', type=str, default="./example/example.png")
-    parser.add_argument('-o', '--output', type=str, default="./example/example_output.png")
+    parser.add_argument('-i', '--image', type=str, default="src/example/example.png")
+    parser.add_argument('-o', '--output', type=str, default="src/example/example_output.png")
     parser.add_argument('--prompt_enhance', action='store_true')
     parser.add_argument('-c', '--cpu_offload', action='store_true')
     args = parser.parse_args()

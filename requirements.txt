@@ -1,0 +1,7 @@
+torch==2.8.0
+diffusers==0.36.0.dev0
+transformers==4.57.1
+Pillow==11.3.0
+json==2.0.9
+re==2.2.1
+argparse==1.1

@@ -131,9 +131,7 @@ class QwenImageEditSafePipeline(QwenImageEditPipeline):
             generated_ids_trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False, max_new_tokens=1e3
         )[0]
         reason, judgment = extract_legal_assessment(safety_check) 
-        import pdb; pdb.set_trace()
-        if judgment == "YES": raise SafetyError(reason, judgment) 
-
+        if judgment == "NO": raise SafetyError(reason, judgment) 
         """
         If the request is judged as unsafe, then raise safety warning, stop generation
         """

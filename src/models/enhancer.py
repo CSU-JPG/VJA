@@ -1,5 +1,5 @@
 import json
-from modelscope import Qwen3VLForConditionalGeneration, AutoProcessor
+from transformers import Qwen3VLForConditionalGeneration, AutoProcessor
 
 # pls refer to https://github.com/QwenLM/Qwen-Image/blob/main/src/examples/tools/prompt_utils.py for the prompt enhancement
 class prompt_enhancer:
