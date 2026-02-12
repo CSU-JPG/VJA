@@ -12,12 +12,13 @@ Welcome ! this project aims to investigate the safety of large image editing mod
 
 <div align="center">
 
-🌐 [Homepage](https://github.com/JayceonHo/VJA/) | 🏆 [Leaderboard](https://github.com/JayceonHo/VJA) | 👉 [Dataset](https://github.com/JayceonHo/VJA) |  📄 [Paper](https://github.com/JayceonHo/VJA)
+🌐 [Github](https://github.com/JayceonHo/VJA/) | 🏆 [Leaderboard](https://csu-jpg.github.io/vja.github.io/) | 👉 [Dataset](https://huggingface.co/datasets/CSU-JPG/IESBench) |  📄 [Paper](https://arxiv.org/pdf/2602.10179)
 
 </div>
 
 ## 📢 Updates
 
+- **[2026-2-12]**: Our paper is available on arXiv  🎉 🎉 🎉
 - **[2026-2-5]**: Our Github project is online 🎉 🎉 🎉
 
 ## 📑 Table of Contents
@@ -159,7 +160,7 @@ Please see [here](https://github.com/CSU-JPG/VJA/tree/main/src) for the setup an
 IESBench was meticulously designed to challenge and evaluate image editing safety.
 For more detailed information and accessing our dataset, please refer to our Huggingface page:
 
-- The dataset is available [here](https://huggingface.co/datasets)
+- The dataset is available [here](https://huggingface.co/datasets/CSU-JPG/IESBench)
 
 - The detailed information of each data is recored in json as follows:
 
@@ -196,10 +197,10 @@ If you find our work can be helpful, we would appreciate your citation and star:
       title={When the Prompt Becomes Visual: Vision-Centric Jailbreak Attacks for Large Image Editing Models}, 
       author={Jiacheng Hou and Yining Sun and Ruochong Jin and Haochen Han and Fangming Liu and Wai Kin Victor Chan and Alex Jinpeng Wang},
       year={2026},
-      eprint={xxx},
+      eprint={2602.10179},
       archivePrefix={arXiv},
-      primaryClass={cs.SE},
-      url={https://arxiv.org/abs/xxx}, 
+      primaryClass={cs.CV},
+      url={https://arxiv.org/pdf/2602.10179}, 
 }
 ```
 
