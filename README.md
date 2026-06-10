@@ -17,7 +17,7 @@ Welcome ! this project aims to investigate the safety of large image editing mod
 </div>
 
 ## 📢 Updates
-
+- **[2026-6-10]**: Our paper is selected for an oral presentation 🎉 🎉 🎉
 - **[2026-5-1]**: Our paper is accepted to ICML 2026 as a spotlight  🎉 🎉 🎉
 - **[2026-2-12]**: Our paper is available on arXiv  🎉 🎉 🎉
 - **[2026-2-5]**: Our Github project is online 🎉 🎉 🎉
