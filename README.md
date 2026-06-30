@@ -12,13 +12,14 @@ Welcome ! this project aims to investigate the safety of large image editing mod
 
 <div align="center">
 
-🌐 [Github](https://github.com/JayceonHo/VJA/) | 🏆 [Leaderboard](https://csu-jpg.github.io/vja.github.io/) | 👉 [Dataset](https://huggingface.co/datasets/CSU-JPG/IESBench) |  📄 [Paper](https://arxiv.org/pdf/2602.10179)
+🌐 [Project Page](https://csu-jpg.github.io/vja.github.io/) | 🎨 [Dataset](https://huggingface.co/datasets/CSU-JPG/IESBench) |  📄 [Paper](https://arxiv.org/pdf/2602.10179) | 💡 [知乎解读](https://zhuanlan.zhihu.com/p/2053220004867450588) ｜ 📝 [Unit.AI Report](https://www.unite.ai/jailbreaking-ai-censors-via-in-image-text/)
 
 </div>
 
 ## 📢 Updates
-- **[2026-6-10]**: Our paper is selected for an oral presentation 🎉 🎉 🎉
-- **[2026-5-1]**: Our paper is accepted to ICML 2026 as a spotlight  🎉 🎉 🎉
+- **[2026-6-30]**: We have released the full dataset on Hugging Face. We will release the defense code for Flux and Longcat-Image-Edit, along with the complete evaluation code, in the coming weeks.
+- **[2026-6-10]**: Our paper is selected for an *oral presentation* at **ICML 2026** 🎉 🎉 🎉
+- **[2026-5-1]**: Our paper is accepted to **ICML 2026** as a *spotlight*  🎉 🎉 🎉
 - **[2026-2-12]**: Our paper is available on arXiv  🎉 🎉 🎉
 - **[2026-2-5]**: Our Github project is online 🎉 🎉 🎉
 
@@ -43,8 +44,9 @@ Welcome ! this project aims to investigate the safety of large image editing mod
 
 
 
-## 🌟 Project Overview
-Recent advances in large image editing models have shifted the paradigm from text-driven instructions to *vision-prompt* editing, where user intent is inferred directly from visual inputs such as marks, arrows, and visual–text prompts. While this paradigm greatly expands usability, it also introduces a critical and underexplored safety risk: *the attack surface itself becomes visual.* To mitigate the safety gap, this project aims to systematically investigate the safety of large image editing models from a vision-centric perspective, with new jailbreak attack method, benchmark and a training-free defense approach.
+## ⚡️ Project Highlights
+
+TL; DR: Recent advances in large image editing models have shifted the paradigm from text-driven instructions to *vision-prompt* editing, where user intent is inferred directly from visual inputs such as marks, arrows, and visual–text prompts. While this paradigm greatly expands usability, it also introduces a critical and underexplored safety risk: *the attack surface itself becomes visual.* To mitigate the safety gap, this project aims to systematically investigate the safety of large image editing models from a vision-centric perspective, with new jailbreak attack method, benchmark and a training-free defense approach.
 
 ### #1 - Vision-centric Jailbreak Attack
 
